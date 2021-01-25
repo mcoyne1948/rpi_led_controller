@@ -14,10 +14,10 @@ Installation is an involved process. On the client it requires not just installi
 gRPC
 Python server program
 #### Wiring
-The default assignment of the green LED on GPIO20, physical connector pin 38, and the red LED on GPIO21, physical pin 40. 
+
+## Going Further
+- **Change GPIO Pins** The default assignment of the green LED on GPIO20, physical connector pin 38, and the red LED on GPIO21, physical pin 40. 
 The actual GPIO pins used can easily be changed by modifying the values of **greenGPIOpin** and/or **redGPIOpin**
 near the beginning of the file **led_ctlr_server.py** but this will of course change the physical pin assignment on the connector.
-##Going Further
-- **Change GPIO Pins**
-- **Add message features to protocol buffer channel**
-- **Add new remote control functions**
+- **Add message features to protocol buffer channel** - Features are added to the communication channel as defined  by the gRPC protocol buffer specifications in the led_ctlr.proto file included with the server software. A basic tutorial on the definition and use of this file can be found in the [Quick start](https://grpc.io/docs/languages/python/quickstart/) for gRPC.
+- **Add new remote control functions** - The possibilities are endless. There are many I2C sensors for tempurature, humidity, air pressure, magnetometer, accelerometer, gyroscopes, etc. that are easily interfaced with a Raspberry Pi and therefore could be made accessible to Naomi.
