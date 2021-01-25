@@ -18,6 +18,7 @@ import led_ctlr_pb2
 import led_ctlr_pb2_grpc
 
 warning_msg = ""
+serverIP = '192.168.50.173:50051'
 
 class ControlLEDPlugin(plugin.SpeechHandlerPlugin):
     LED = [0, 0]
@@ -155,7 +156,7 @@ class ControlLEDPlugin(plugin.SpeechHandlerPlugin):
 
             # Send LED change control message to server
             ans_text = "RPi LED Controller"
-            channel = grpc.insecure_channel('192.168.50.173:50051')
+            channel = grpc.insecure_channel(serverIP)
             stub = led_ctlr_pb2_grpc.RPi_CtlrStub(channel)
             response = stub.SendMsg(led_ctlr_pb2.RPiRequest(name=ans_text, colour=colr, operation=actCrtl))
 
