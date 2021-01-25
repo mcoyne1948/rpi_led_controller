@@ -11,7 +11,13 @@ Installation is an involved process. On the client it requires not just installi
 ### Install Client
 
 ### Install Server
+gRPC
+Python server program
 #### Wiring
-The default pinout is green LED on GPIO20, physical connector pin 38 and red LED on GPIO21, physical piin 40. 
-The actual GPIO pins used can easily be changed by modifying the values of greenGPIOpin and/or redGPIOpin
-near the beginning of the file *led_ctlr_server.py*
+The default assignment of the green LED on GPIO20, physical connector pin 38, and the red LED on GPIO21, physical pin 40. 
+The actual GPIO pins used can easily be changed by modifying the values of **greenGPIOpin** and/or **redGPIOpin**
+near the beginning of the file **led_ctlr_server.py** but this will of course change the physical pin assignment on the connector.
+##Going Further
+- **Change GPIO Pins**
+- **Add message features to protocol buffer channel**
+- **Add new remote control functions**
