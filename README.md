@@ -38,9 +38,10 @@ cd led_controller_server_program_directory
 You can now test things out by saying "Naomi set red on". If that works try the green LED.
 ## Usage
 Naomi will accept led controller commands in the following format:  
-**NAOMI {action keyword} {colour keyword} (optional LED) {operation keyword}**   
+
+**NAOMI {action keyword} {colour keyword}** (optional LED) **{operation keyword}**   
 OR   
-**NAOMI {action keyword} {operation keyword} {colour keyword} (optional LED)**  
+**NAOMI {action keyword} {operation keyword} {colour keyword}** (optional LED)  
 - **{action keyword}** - blink, set, turn (if missing default is turn)
 - **{operation keyword}** - on, off (if missing operation defaults to on)
 - **{colour keyword}** - green, red (if missing action/operation applies to both)  
