@@ -10,7 +10,8 @@ In this plugin Naomi acts as a client collecting vocal input about the colour(s)
 Installation is an involved process since there is separate software that must be install on both the client and server. On the client it requires not just installing and enabling the rpi_led_ctrl plugin using Naomi commands but also gRPC module must be installed. On server the server-side controller software, the gRPC module, the rpi_led_ctrl gRPC classes  and Python wiringpi module must all be installed.
 ### Install Client
 The rpi_led_ctrl plugin is installed in Naomi as follows:
-'''code  
+'''shell
+code  
 more code'''
 The gRPC module
 ### Install Server
