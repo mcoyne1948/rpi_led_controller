@@ -43,7 +43,8 @@ OR
 **NAOMI {action keyword} {operation keyword} {colour keyword} (optional LED)**  
 - **{action keyword}** - blink, set, turn (if missing default is turn)
 - **{operation keyword}** - on, off (if missing operation defaults to on)
-- **{colour keyword}** - green, red (if missing action/operation applies to both)   
+- **{colour keyword}** - green, red (if missing action/operation applies to both)  
+
 Naomi with give an error message if it cannot detect a meaningful combination of keywords.
 ## Going Further
 - **Change GPIO Pins** The default assignment of the green LED on GPIO20, physical connector pin 38, and the red LED on GPIO21, physical pin 40. 
