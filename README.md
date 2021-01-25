@@ -1,5 +1,5 @@
 # rpi_led_ctrl
-A simple module that combine Naomi and a separate Raspberry Pi platform to show possibilities in IOT and new interactions.
+A simple module that combine Naomi and a separate Raspberry Pi platform to show possibilities in IOT and new interactions.  
 A Naomi speech handler plugin for controlling two LEDs attached to the pins of the GPIO connector on a remote network connected Raspberry Pi.
 - **Language** English
 - **Naomi Version Support** V3.0
@@ -11,3 +11,7 @@ Installation is an involved process. On the client it requires not just installi
 ### Install Client
 
 ### Install Server
+#### Wiring
+The default pinout is green LED on GPIO20, physical connector pin 38 and red LED on GPIO21, physical piin 40. 
+The actual GPIO pins used can easily be changed by modifying the values of greenGPIOpin and/or redGPIOpin
+near the beginning of the file *led_ctlr_server.py*
