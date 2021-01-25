@@ -11,11 +11,10 @@ Installation is an involved process since there is separate software that must b
 ### Install Client
 The rpi_led_ctrl plugin is installed in Naomi as follows:
 ```shell
-76
-sudo apt-get update
-77
-sudo apt-get upgrade
-78
+cd your_Naomi_directory
+./Naomi --install "led_contoller"  
+...  
+./Naomi --enable "led_contoller"
 ```
 The gRPC module
 ### Install Server
