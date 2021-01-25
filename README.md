@@ -19,6 +19,12 @@ cd your_Naomi_directory
 ...  
 ```
 Instructions for the installation of the gRPC module may be found [here](https://grpc.io/docs/languages/python/quickstart/). This should be done as root using sudo. (**Note**: You only need to install the grpcio-tools if you make changes to the .proto file and need to recompile it.)
+
+In order for the client to communicate over the network to the server it must know the network IP address and port of the server. Of course this will change from installation to installation so you will have to manually update this in the software. On the client in the  directory *led_controller* edit the file *led_controller.py*. Near the top of the file is the line:
+```shell
+serverIP = '192.168.50.173:50051'    
+```
+Change the value **192.168.50.173** to the IP address of you server and save the file.
 ### Install Server
 Instructions for the installation of the gRPC module may be found above.  
 Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).  
@@ -28,7 +34,7 @@ Copy the directory *LED_responder* and its contents to an appropriate location i
 ## Operation and Testing
 With all the software installed on both client and server, and the hardware setup on the server, go to a terminal session on the led_controller Raspberry Pi and start the Naomi client:
 ```shell
-cd _your_Naomi_directory_
+cd your_Naomi_directory
 ./Naomi     
 ```
 Then go to a terminal session on the LED_responder Raspberry Pi server and enter:
