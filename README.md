@@ -14,15 +14,27 @@ The rpi_led_ctrl plugin is installed in Naomi as follows:
 cd your_Naomi_directory
 ./Naomi --install "led_contoller"  
 ...  
-./Naomi --enable "led_contoller"
+./Naomi --enable "led_contoller"  
+...  
 ```
-The gRPC module
+Instructions for the installation of the gRPC module may be found [here](https://grpc.io/docs/languages/python/quickstart/). This should be done as root using sudo. (**Note**: You only need to install the grpcio-tools if you make chanes to the .proto file and need to recompile it.)
 ### Install Server
-gRPC
-Python server program
+Instructions for the installation of the gRPC module may be found above.  
+Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).
+The directory containing the led controller server program should be copied to an appropriate location in the home directory.
 #### Wiring
 
-## Testing and Operation
+## Operation and Testing
+With all the software installed on both client and server, and the hardware setup on the server, start the Naomi client:
+```shell
+cd your_Naomi_directory
+./Naomi --install "led_contoller"    
+```
+Then go to a terminal session on the Raspberry Pi LED controller server and enter:
+```shell
+cd led_controller_server_program_directory
+./led_controller.py 
+```
 
 ## Going Further
 - **Change GPIO Pins** The default assignment of the green LED on GPIO20, physical connector pin 38, and the red LED on GPIO21, physical pin 40. 
