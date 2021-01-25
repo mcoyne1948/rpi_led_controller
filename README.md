@@ -17,23 +17,23 @@ cd your_Naomi_directory
 ./Naomi --enable "led_contoller"  
 ...  
 ```
-Instructions for the installation of the gRPC module may be found [here](https://grpc.io/docs/languages/python/quickstart/). This should be done as root using sudo. (**Note**: You only need to install the grpcio-tools if you make chanes to the .proto file and need to recompile it.)
+Instructions for the installation of the gRPC module may be found [here](https://grpc.io/docs/languages/python/quickstart/). This should be done as root using sudo. (**Note**: You only need to install the grpcio-tools if you make changes to the .proto file and need to recompile it.)
 ### Install Server
 Instructions for the installation of the gRPC module may be found above.  
 Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).
-The directory containing the led controller server programs should be copied to an appropriate location in the home directory.
+The directory containing the led controller server programs and the gRPC class definition files should be copied to an appropriate location in the home directory.
 #### Wiring
 
 ## Operation and Testing
 With all the software installed on both client and server, and the hardware setup on the server, start the Naomi client:
 ```shell
 cd your_Naomi_directory
-./Naomi --install "led_contoller"    
+./Naomi     
 ```
 Then go to a terminal session on the Raspberry Pi LED controller server and enter:
 ```shell
 cd led_controller_server_program_directory
-./led_controller.py 
+./led_ctlr_server.py 
 ```
 You can now test things out by saying "Naomi set red on". If that works try the green LED.
 ## Usage
