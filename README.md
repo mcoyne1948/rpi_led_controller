@@ -35,7 +35,16 @@ Then go to a terminal session on the Raspberry Pi LED controller server and ente
 cd led_controller_server_program_directory
 ./led_controller.py 
 ```
-
+You can now test things out by saying "Naomi set red on". If that works try the green LED.
+## Usage
+Naomi will accept led controller commands in the following format:  
+**NAOMI {action keyword} {colour keyword} (optional LED) {operation keyword}**  
+OR
+**NAOMI {action keyword} {operation keyword} {colour keyword} (optional LED)**  
+- **{action keyword}** - blink, set, turn (if missing default is turn)
+- **{operation keyword}** - on, off (if missing operation defaults to on)
+- **{colour keyword}** - green, red (if missing action/operation applies to both)
+Naomi with give an error message if it cannot detect a meaningful combination of keywords.
 ## Going Further
 - **Change GPIO Pins** The default assignment of the green LED on GPIO20, physical connector pin 38, and the red LED on GPIO21, physical pin 40. 
 The actual GPIO pins used can easily be changed by modifying the values of **greenGPIOpin** and/or **redGPIOpin**
