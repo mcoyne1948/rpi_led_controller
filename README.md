@@ -10,7 +10,7 @@ In this plugin Naomi acts as a client collecting vocal input about the colour(s)
 Installation is an involved process since there is separate software that must be install on both the client and server. On the client it requires not just installing and enabling the rpi_led_ctrl plugin using Naomi commands but also the gRPC module must be installed. On the server the server-side controller software, the gRPC module, the rpi_led_ctrl gRPC classes  and Python wiringpi module must all be installed.
 ### Install Client
 Copy the directory *led_controller* and its contents into the Naomi/plugins/speechhandler directory  
-The rpi_led_ctrl plugin is installed in Naomi as follows:
+The led_controller plugin is installed in Naomi as follows:
 ```shell
 cd your_Naomi_directory
 ./Naomi --install "led_contoller"  
@@ -21,17 +21,17 @@ cd your_Naomi_directory
 Instructions for the installation of the gRPC module may be found [here](https://grpc.io/docs/languages/python/quickstart/). This should be done as root using sudo. (**Note**: You only need to install the grpcio-tools if you make changes to the .proto file and need to recompile it.)
 ### Install Server
 Instructions for the installation of the gRPC module may be found above.  
-Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).
+Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).  
 Copy the directory *LED_responder* and its contents to an appropriate location in the home directory.
 #### Wiring
 
 ## Operation and Testing
-With all the software installed on both client and server, and the hardware setup on the server, start the Naomi client:
+With all the software installed on both client and server, and the hardware setup on the server, go to a terminal session on the led_controller Raspberry Pi and start the Naomi client:
 ```shell
 cd _your_Naomi_directory_
 ./Naomi     
 ```
-Then go to a terminal session on the Raspberry Pi LED controller server and enter:
+Then go to a terminal session on the LED_responder Raspberry Pi server and enter:
 ```shell
 cd LED_responder_server_program_directory_
 ./led_ctlr_server.py 
