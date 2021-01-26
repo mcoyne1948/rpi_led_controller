@@ -23,7 +23,7 @@ cd your_Naomi_directory
 ./Naomi --enable "led_contoller"  
 ...  
 ```
-5. Instructions for the installation of the gRPC modulesipi may be found [here](https://grpc.io/docs/languages/python/quickstart/). Install both grpcio and grpcio-tools. This should be done as root using sudo.
+5. Instructions for the installation of the gRPC modules may be found [here](https://grpc.io/docs/languages/python/quickstart/). Install both grpcio and grpcio-tools. This should be done as root using sudo.
 ### Install Server
 1. Instructions for the installation of the gRPC module may be found above.  
 2. Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).  
@@ -39,7 +39,7 @@ cd your_Naomi_directory
 Then go to a terminal session on the LED_responder Raspberry Pi server and enter:
 ```shell
 cd LED_responder_server_program_directory_
-./led_ctlr_server.py 
+.python3 led_ctlr_server.py 
 ```
 You can now test things out by saying "Naomi set red on". If that works try the green LED.
 ## Usage
