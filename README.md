@@ -29,7 +29,7 @@ cd your_Naomi_directory
 1. Instructions for the installation of the gRPC module may be found above.  
 2. Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).  
 3. Copy the directory *LED_responder* and its contents to an appropriate location in the home directory.
-#### Wiring
+#### Server LED Wiring
 Ensure you use the right value current limiting resistors for the LED and you observe the correct polarity on the LED pin wiring.
 - **Ground Wire** GPIO connectory pin 34
 - **Green LED** GPIO connectory pin 38
