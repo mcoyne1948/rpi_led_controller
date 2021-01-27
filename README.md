@@ -30,7 +30,7 @@ cd your_Naomi_directory
 2. Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).  
 3. Copy the directory *LED_responder* and its contents to an appropriate location in the home directory.
 #### Wiring
-
+![Wiring Diagram](Wiring-diagram.jpg)
 ## Operation and Testing
 With all the software installed on both client and server, and the hardware setup on the server, go to a terminal session on the led_controller Raspberry Pi and start the Naomi client:
 ```shell
