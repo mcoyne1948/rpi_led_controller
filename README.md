@@ -43,8 +43,8 @@ $ ./Naomi     
 ```
 Then go to a terminal session on the LED_responder Raspberry Pi server and enter:
 ```shell
-cd LED_responder_server_program_directory_
-.python3 led_ctlr_server.py 
+$ cd LED_responder_server_program_directory_
+$ python3 led_ctlr_server.py 
 ```
 You can now test things out by saying "Naomi set red on". If that works try the green LED.
 ## Usage
