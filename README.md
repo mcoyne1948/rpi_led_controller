@@ -30,9 +30,11 @@ cd your_Naomi_directory
 2. Instructions for the installation of the Python wiringpi module may be found [here](https://pypi.org/project/wiringpi/).  
 3. Copy the directory *LED_responder* and its contents to an appropriate location in the home directory.
 #### Wiring
-- **Ground Wire** GPIO connectory pin 34 ![Wiring Diagram](Wiring-diagram.jpg)
+Ensure you use the right value current limiting resistors for the LED and you observe the correct polarity on the LED pin wiring.
+- **Ground Wire** GPIO connectory pin 34
 - **Green LED** GPIO connectory pin 38
 - **Red LED**   GPIO connectory pin 40
+![Wiring Diagram](Wiring-diagram.jpg)
 ## Operation and Testing
 With all the software installed on both client and server, and the hardware setup on the server, go to a terminal session on the led_controller Raspberry Pi and start the Naomi client:
 ```shell
