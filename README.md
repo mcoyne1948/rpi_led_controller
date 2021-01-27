@@ -18,10 +18,10 @@ serverIP = '192.168.50.173:50051'    
 3. Change the value **192.168.50.173** to the IP address of your server and save the file. 
 4. The led_controller plugin is installed in Naomi as follows:
 ```shell
-cd your_Naomi_directory
+$ cd your_Naomi_directory
 ./Naomi --install "led_contoller"  
 ...  
-./Naomi --enable "led_contoller"  
+$ ./Naomi --enable "led_contoller"  
 ...  
 ```
 5. Instructions for the installation of the gRPC modules may be found [here](https://grpc.io/docs/languages/python/quickstart/). Install both grpcio and grpcio-tools. This should be done as root using sudo. (**Note**: These installs must be done with python3 and pip3.)
@@ -38,8 +38,8 @@ Ensure you use the right value current limiting resistors for the LED and you ob
 ## Operation and Testing
 With all the software installed on both client and server, and the hardware setup on the server, go to a terminal session on the led_controller Raspberry Pi and start the Naomi client:
 ```shell
-cd your_Naomi_directory
-./Naomi     
+$ cd your_Naomi_directory
+$ ./Naomi     
 ```
 Then go to a terminal session on the LED_responder Raspberry Pi server and enter:
 ```shell
