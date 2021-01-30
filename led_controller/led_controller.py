@@ -10,12 +10,11 @@ from naomi import plugin
 from naomi import profile
 
 # gRPC imports
-import sys
-sys.path.append('/home/pi/Naomi/plugins/speechhandler/led_controller')
 import logging
 import grpc
-import led_ctlr_pb2
-import led_ctlr_pb2_grpc
+from .LED_responder import led_ctlr_pb2
+from .LED_responder import led_ctlr_pb2_grpc
+
 
 warning_msg = ""
 serverIP = '192.168.50.173:50051'
