@@ -1,10 +1,10 @@
 [Plugin]
 Name = RPi LED Controller
-Version = 1.0.1
+Version = 1.0.2
 License = MIT
-URL = https://github.com/mcoyne1948/rpi_led_ctrl.git
-Description = Allows Naomi to control LEDs on a remote RPi server using gRPC
+URL = https://github.com/mcoyne1948/rpi_led_controller.git
+Description = Allows Naomi to control LEDs attached to the GPIO pins on a remote RPi server using gRPC
 
 [Author]
 Name = Malcolm Coyne
-URL = https://malcolmc.ca/scouts
+URL = https://malcolmc.ca/
