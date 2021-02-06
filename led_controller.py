@@ -12,8 +12,8 @@ from naomi import profile
 # gRPC imports
 import logging
 import grpc
-from .LED_responder import led_ctlr_pb2
-from .LED_responder import led_ctlr_pb2_grpc
+from .led_responder import led_ctlr_pb2
+from .led_responder import led_ctlr_pb2_grpc
 
 
 warning_msg = ""
