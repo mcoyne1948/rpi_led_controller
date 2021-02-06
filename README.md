@@ -1,5 +1,5 @@
-# rpi_led_ctrl
-A simple module that combines Naomi and a remote Raspberry Pi platform to show possibilities in IOT and new interactions.  
+# rpi_led_controller
+A simple module that combines Naomi and a remote Raspberry Pi platform to show possibilities in IOT and new interactions. 
 This Naomi speech handler plugin implements the control of two LEDs attached to the pins of the GPIO connector on a remote network connected Raspberry Pi. Under voice control either or both LEDs can be turned on or off or blinked.
 - **Language** English
 - **Naomi Version Support** V3.0
