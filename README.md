@@ -11,7 +11,7 @@ In this plugin Naomi acts as a client collecting vocal input about the colour(s)
 Installation is an involved process since there is separate software that must be install on both the client and server. On the client it requires not just installing and enabling the rpi_led_ctrl plugin using Naomi commands but also the gRPC module must be installed. On the server the server-side controller software, the gRPC module, and Python wiringpi module must all be installed along with actual physical wiring of the LEDs and their resistors to the GPIO connector.
 ### Install Client
 It is assumed Naomi is already installed and running on the client.
-1. Copy the  **_led_controller.py_**, **_plugin.info_** and **_\__init\__.py_** files to the **_~/.config/naomi/plugins/speechhandler/led_controller_** directory 
+1. Copy the  **_led_controller.py_**, **_plugin.info_** and **_\_\_init\_\_.py_** files to the **_~/.config/naomi/plugins/speechhandler/led_controller_** directory 
 2. In order for the client to communicate over the network to the server it must know the network IP address and port of the server. Of course this will change from installation to installation so you will have to manually update this in the software. On the client in the  directory *led_controller* edit the file *led_controller.py*. Near the top of the file is the line:
 ```shell
 serverIP = '192.168.50.173:50051'    
