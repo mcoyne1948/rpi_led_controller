@@ -15,11 +15,11 @@ import grpc
 from .led_responder import led_ctlr_pb2
 from .led_responder import led_ctlr_pb2_grpc
 
-
-warning_msg = ""
-serverIP = '192.168.50.173:50051'
-
 class ControlLEDPlugin(plugin.SpeechHandlerPlugin):
+    
+    warning_msg = ""
+    serverIP = '192.168.50.173:50051'
+
     LED = [0, 0]
     GREEN = 0		# Following are the colour options
     RED = 1
